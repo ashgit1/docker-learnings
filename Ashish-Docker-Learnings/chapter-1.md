@@ -18,9 +18,14 @@ Images:
 -------
 The file system and configuration of our application which are used to create containers. To find out more about a Docker image, run "$ docker inspect alpine". In the demo above, you used the docker pull command to download the alpine image. When you executed the command docker run hello-world, it also did a docker pull behind the scenes to download the hello-world image.
 
+Image: "Application Binaries and Dependencies. Not a complete OS, no kernel, kernel modules(drivers), 
+		uses the kernel of the host"
+
 Containers:
 -----------
 Running instances of Docker images — containers run the actual applications. A container includes an application and all of its dependencies. It shares the kernel with other containers, and runs as an isolated process in user space on the host OS. You created a container using docker run which you did using the alpine image that you downloaded. A list of running containers can be seen using the "$ docker ps" command.
+
+Container: "It is just a single read/write layer on top of image"
 
 Docker daemon:
 --------------
@@ -41,3 +46,12 @@ The Dockerfile contains all the information that Docker needs to know to run the
 "It is a simple way to automate the image creation process". 
 The best part is that the commands you write in a Dockerfile are almost identical to their equivalent Linux commands. 
 This means you don't really have to learn new syntax to create your own Dockerfiles.
+
+Docker Hub:
+-----------
+https://hub.docker.com
+It's like apt package system for Containers.
+Contains official images and how to use them.
+
+
+

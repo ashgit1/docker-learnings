@@ -127,7 +127,17 @@ portainer/portainer   latest              47dbf4321bb4        5 weeks ago       
 $ docker images --filter=reference='portainer/portainer:latest' --format '{{.ID}}'
 47dbf4321bb4
 
+History of images:
+------------------
+This shows the layers which were used to make up the image.
+Each layer is stored only once on a host.
+This saves storage space on host and transfer time on push/pull.
+$ docker image history nginx:latest
 
 
-
+Inspect an image/container:
+---------------------------
+Returns meta data of the image in json format.
+$ docker image inspect nginx:latest
+$ docker container inspect cserver | grep -i "ipaddress"
 
