@@ -25,7 +25,7 @@ docker-compose.yml:
 
 docker-compose CLI:
 1. It comes with docker for Mac/Windows, but separte download for Linux
-2. Not a production-garde tool but ideal for local development and test
+2. Not a production-ready tool but ideal for local development and test
 3. 2 most common commands are:
 	--> docker-compose up    # set up volumes/networks and start all containers 
 	--> docker-compose down  # stop containers and remove volumes/networks/container
@@ -34,3 +34,9 @@ docker-compose CLI:
 		--> git clone github.com/some/software
 		--> docker-compose up
 		
+#Docker Swarm:
+Swarm mode is a clustering solution built inside docker
+
+docker node --help
+docker swarm --help
+docker service --help
